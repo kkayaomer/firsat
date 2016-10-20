@@ -3,7 +3,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ömer
+ * User: Omer
  * Date: 28.09.2016
  * Time: 13:11
  */
@@ -22,10 +22,10 @@ include("fonksiyon/fonksiyon.php");
                                         </head>
              <body>
 
-                                <!--main container başlangıç yeri.-->
+                                <!--main container başlangıç yeri.--->
                     <div class="main_wrapper">
 
-                                            <!--header  başlangıç yeri.-->
+                                            <!--header  başlangıç yeri.--->
                                             <div class="header_wrapper">
 
                                                         <div style="height: 140px;">
@@ -33,9 +33,9 @@ include("fonksiyon/fonksiyon.php");
                                                             <img id="banner" src="resimler/banner.gif"/>
                                                         </div>
                                             </div>
-                                           <!--header bitiş yeri.-->
+                                           <!--header bitiş yeri.--->
 
-                                          <!--navigation bar başlangıç yeri.-->
+                                          <!--navigation bar başlangıç yeri.--->
                                         <div class="menubar">
 
                                                 <ul id="menu">
@@ -56,10 +56,10 @@ include("fonksiyon/fonksiyon.php");
                                                 </div>
 
                                         </div>
-                                            <!--navigation bar bitiş yeri.-->
+                                            <!--navigation bar bitiş yeri.--->
 
 
-                                        <!--content wrapper başlangıç-->
+                                        <!--content wrapper başlangıç--->
                                     <div class="content_wrapper">
 
                                             <div id="sidebar">
@@ -139,7 +139,7 @@ include("fonksiyon/fonksiyon.php");
 
 
                                     </div>
-                                    <!--content wrapper bitiş-->
+                                    <!--content wrapper bitiş--->
 
 
                                 <div id="footer">
@@ -148,7 +148,7 @@ include("fonksiyon/fonksiyon.php");
                                 </div>
                     </div>
 
-                     <!--main container bitiş yeri.-->
+                     <!--main container bitiş yeri.--->
 
              </body>
 

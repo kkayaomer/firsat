@@ -41,8 +41,8 @@ include("fonksiyon/fonksiyon.php");
         <ul id="menu">
             <li><a href="index.php">Anasayfa</a></li>
             <li><a href="urunler.php">Ürünler</a></li>
-            <li><a href="musteri/hesabım.php">Hesabım</a></li>
-            <li><a href="#">Kayd Ol</a></li>
+            <li><a href="musteri/hesabim.php">Hesabım</a></li>
+            <li><a href="#">KaydOl</a></li>
             <li><a href="sepet.php">Alışveriş Sepeti</a></li>
             <li><a href="#">İletişim</a></li>
 
@@ -87,14 +87,40 @@ include("fonksiyon/fonksiyon.php");
         <div id="content_area">
             <?php Alisveris_Sepeti(); ?>
             <div id="alisveris_sepeti">
-                                             <span
-                                                 style="float: right; font-size: 18px; padding: 5px; line-height:40px; ">Hoşgeldiniz!  <b
-                                                     style="color:yellow">Alışveriş Sepeti
+                                             <span style="float: right; font-size: 16px; padding: 5px; line-height:40px; ">
+
+                                                 <?php
+                                                 if (isset($_SESSION['mus_email'])) {
+                                                 echo "<b>Hoşgeldiniz:</b>".$_SESSION['mus_email'] ."<b style='color:yellow;'>Your</b>";
+
+                                                 }
+                                                 else {
+                                                     echo "<b>Hoşgeldiniz Misafir</b>";
+                                                 }
+                                                 ?>
+
+                                                     <b style="color:yellow">Alışveriş Sepeti
                                                      -</b>Toplam Adet: <?php Toplam_Adet(); ?>
                                                  Toplam Fiyat: <?php Toplam_Fiyat(); ?> <a
-                                                     href="sepet.php" style="color: yellow">Sepete Git</a>
+                                                     href="index.php" style="color: yellow">Alişverişe Geri Dön</a>
 
 
+                                                 <?php
+
+                                                 if (!isset($_SESSION['mus_email'])) {
+
+
+                                                     echo "<a href ='musteri/checkout.php' style='color: orange'>Giriş</a>";
+
+                                                 }
+                                                 else {
+                                                     echo "<a href ='cikis.php' style='color: orange'>Çıkış</a>";
+
+                                                 }
+
+
+
+                                                 ?>
                                              </span>
 
             </div>
@@ -181,7 +207,7 @@ include("fonksiyon/fonksiyon.php");
                         <tr align="center">
                             <td colspan="2"><input type="submit" name="update_sepet" value="Sepeti Güncelle"/></td>
                             <td><input type="submit" name="continue" value="Alışverişe Devam"/></td>
-                            <td><a href="checkout.php" style="text-decoration: none; color: black;">
+                            <td><a href="musteri/checkout.php" style="text-decoration: none; color: black;">
                                     <button>Checkout
                                 </a></button> </td>
                         </tr>

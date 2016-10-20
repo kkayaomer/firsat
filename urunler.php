@@ -40,8 +40,8 @@ include("fonksiyon/fonksiyon.php");
         <ul id="menu">
             <li><a href="index.php">Anasayfa</a></li>
             <li><a href="urunler.php">Ürünler</a></li>
-            <li><a href="musteri/hesabım.php">Hesabım</a></li>
-            <li><a href="#">Kayd Ol</a></li>
+            <li><a href="musteri/hesabim.php">Hesabım</a></li>
+            <li><a href="#">KaydOl</a></li>
             <li><a href="sepet.php">Alışveriş Sepeti</a></li>
             <li><a href="#">İletişim</a></li>
 

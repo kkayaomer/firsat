@@ -8,7 +8,7 @@
  * Time: 13:11
  */
 session_start();
-include("fonksiyon/fonksiyon.php");
+include("../fonksiyon/fonksiyon.php");
 
 ?>
 
@@ -18,7 +18,7 @@ include("fonksiyon/fonksiyon.php");
 
     <title>firsat.com </title>
 
-    <link rel="stylesheet" href="styles/style.css" media="all"/>
+    <link rel="stylesheet" href="../styles/style.css" media="all"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
@@ -29,8 +29,8 @@ include("fonksiyon/fonksiyon.php");
     <div class="header_wrapper">
 
         <div style="height: 140px;">
-            <a href="index.php"><img id="logo" src="resimler/logo.gif"/></a>
-            <img id="banner" src="resimler/banner.gif"/>
+            <a href="../index.php"><img id="logo" src="../resimler/logo.gif"/></a>
+            <img id="banner" src="../resimler/banner.gif"/>
         </div>
     </div>
     <!--header bitiş yeri.--->
@@ -39,17 +39,17 @@ include("fonksiyon/fonksiyon.php");
     <div class="menubar">
 
         <ul id="menu">
-            <li><a href="index.php">Anasayfa</a></li>
-            <li><a href="urunler.php">Ürünler</a></li>
-            <li><a href="musteri/hesabim.php">Hesabım</a></li>
-            <li><a href="#">KaydOl</a></li>
-            <li><a href="sepet.php">Alışveriş Sepeti</a></li>
+            <li><a href="../index.php">Anasayfa</a></li>
+            <li><a href="../urunler.php">Ürünler</a></li>
+            <li><a href="hesabim.php">Hesabım</a></li>
+            <li><a href="#">Kayd Ol</a></li>
+            <li><a href="../sepet.php">Alışveriş Sepeti</a></li>
             <li><a href="#">İletişim</a></li>
 
         </ul>
 
         <div id="form">
-            <form method="get" action="results.php" enctype="multipart/form-data">
+            <form method="get" action="../results.php" enctype="multipart/form-data">
                 <input type="text" name="user_query" placeholder="Bir ürün ara"/>
                 <input type="submit" name="search" value="search"/>
             </form>
@@ -86,51 +86,51 @@ include("fonksiyon/fonksiyon.php");
 
         <div id="content_area">
             <?php Alisveris_Sepeti(); ?>
-            <div id="alisveris_sepeti">  <span style="float: right; font-size: 16px; padding: 5px; line-height:40px; ">
-
+            <div id="alisveris_sepeti">
+                                             <span
+                                                 style="float: right; font-size: 18px; padding: 5px; line-height:40px; ">
                                                  <?php
-                                                 if (isset($_SESSION['mus_email'])) {
-                                                     echo "<b>Hoşgeldiniz:</b>".$_SESSION['mus_email'] ."<b style='color:yellow;'>Your</b>";
+
+                                                 if (!isset($_SESSION['mus_email'])) {
+
+
+                                                     echo "<a href ='musteri/checkout.php' style='color: orange'>Giriş</a>";
 
                                                  }
                                                  else {
-                                                     echo "<b>Hoşgeldiniz Misafir</b>";
+                                                     echo "<a href ='cikis.php' style='color: orange'>Çıkış</a>";
+
                                                  }
+
                                                  ?>
-
-                    <b style="color:yellow">Alışveriş Sepeti
-                        -</b>Toplam Adet: <?php Toplam_Adet(); ?>
-                    Toplam Fiyat: <?php Toplam_Fiyat(); ?> <a
-                        href="index.php" style="color: yellow">Alişverişe Geri Dön</a>
+                                                 <b style="color:yellow">Alışveriş Sepeti -</b>Toplam Adet: <?php Toplam_Adet(); ?>
+                                                 Toplam Fiyat: <?php Toplam_Fiyat(); ?>
+                                                 <a href="../sepet.php" style="color: yellow">Sepete Git</a>
 
 
-                    <?php
-
-                    if (!isset($_SESSION['mus_email'])) {
-
-
-                        echo "<a href ='musteri/checkout.php' style='color: orange'>Giriş</a>";
-
-                    }
-                    else {
-                        echo "<a href ='cikis.php' style='color: orange'>Çıkış</a>";
-
-                    }
-
-
-
-                    ?>
                                              </span>
-
 
             </div>
             <?php echo $ip = getIp(); ?>
 
             <div id="urun_box">
 
-                <?php getUrun(); ?>
-                <?php getUrunKategori(); ?>
-                <?php getUrunMarka(); ?>
+                <?php
+
+                if (!isset($_SESSION['mus_email'])) {
+
+
+                    include("musteri_giris.php");
+
+                } else {
+
+
+                    include("../odeme.php");
+
+
+                }
+                ?>
+
             </div>
 
         </div>
