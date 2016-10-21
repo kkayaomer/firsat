@@ -9,7 +9,7 @@
  */
 
 include("fonksiyon/fonksiyon.php");
-
+session_start();
 ?>
 
 <html>
@@ -42,7 +42,7 @@ include("fonksiyon/fonksiyon.php");
             <li><a href="../index.php">Anasayfa</a></li>
             <li><a href="../urunler.php">Ürünler</a></li>
             <li><a href="hesabim.php">Hesabım</a></li>
-            <li><a href="#">KaydOl</a></li>
+            <li><a href="musteri_kayit.php">KaydOl</a></li>
             <li><a href="../sepet.php">Alışveriş Sepeti</a></li>
             <li><a href="#">İletişim</a></li>
 
@@ -69,7 +69,29 @@ include("fonksiyon/fonksiyon.php");
                         <div id="sidebar_title"> Hesabım:</div>
                         <ul id="kategori">
 
+                            <?php
+
+//                            if(!isset($_SESSION[mus_email])){
+//                                header('Location: checkout.php');
+//                            }
+                            $user = $_SESSION['mus_email'];
+
+                            $get_img   = "select * from musteri where mus_email = '$user'";
+                            $run_img   = mysqli_query($con, $get_img);
+                            $row_img   = mysqli_fetch_array($run_img);
+                            $mus_image = $row_img['mus_image'];
+                            $mus_adi   = $row_img['mus_adi'];
+
+                           // var_dump($row_img);
+                            echo "<p style='text-align:center;'><img src='".$mus_image." 'width='150' height='150'/></p>";
+
+                            ?>
+
                       <li><a href="hesabim.php?siparislerim">Siparişlerim</a></li>
+                            <li><a href="hesabim.php?hesabi_duzenle">Hesabı Düzenle</a></li>
+                            <li><a href="hesabim.php?sifreyi_degistir">Şifreyi Değiştir</a></li>
+                            <li><a href="hesabim.php?hesabi_sil">Hasabı Sil</a></li>
+                            <li><a href="cikis.php">Çıkış</a></li>
 
                         </ul>
 
@@ -88,9 +110,6 @@ include("fonksiyon/fonksiyon.php");
 
                                                          ?>
 
-
-
-
                                                            <?php
 
                                                            if (!isset($_SESSION['mus_email'])) {
@@ -99,8 +118,9 @@ include("fonksiyon/fonksiyon.php");
                                                                echo "<a href ='checkout.php' style='color: orange'>Giriş</a>";
 
                                                            }
+
                                                            else {
-                                                               echo "<a href ='../cikis.php' style='color: orange'>Çıkış</a>";
+                                                               echo "<a href ='cikis.php' style='color: orange'>Çıkış</a>";
 
                                                            }
 
@@ -111,13 +131,50 @@ include("fonksiyon/fonksiyon.php");
 
 
                     </div>
-                    <?php echo $ip = getIp(); ?>
 
                  <div id="urun_box"></div>
+               <?php
+  if(!isset($_GET['siparislerim'])){
+      if(!isset($_GET['hesabi_duzenle'])){
+          if(!isset($_GET['sifreyi_degistir'])){
+              if(!isset($_GET['hesabi_sil'])){
+
+             echo  "
+
+               <h2 style='padding: 17px'>Hoşgeldiniz: $mus_adi</h2>
+             <b>Bu bağlantıyı tıklayarak siparişlerinizi görebilirsiniz!<a href='hesabim.php?siparislerim'>Link</a> </b>";
+
+
+              }
+          }
+      }
+  }
+
+     ?>
+               <?php
+
+               if(isset($_GET['hesabi_duzenle'])){
+
+                   include("hesabi_duzenle.php");
+
+               }
+               if(isset($_GET['sifreyi_degistir'])){
+
+                   include("sifreyi_degistir.php");
+
+               }
+               if(isset($_GET['hesabi_sil'])){
+
+                   include("hesabi_sil.php");
+
+               }
+
+               ?>
 
          </div>
 
     </div>
+
     <!--content wrapper bitiş--->
 
 

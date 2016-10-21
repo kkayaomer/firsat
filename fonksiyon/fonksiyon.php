@@ -6,13 +6,7 @@
  * Time: 11:23
  */
 
-$con = mysqli_connect("localhost", "root", "", "firsat");
-
-if (mysqli_connect_errno()) {
-
-    echo "Bağlantı kurulamadı";
-}
-
+include("db.php");
 //Kullanıcı Ip adresi fonku
 function getIp()
 {

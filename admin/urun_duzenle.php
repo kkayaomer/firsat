@@ -10,12 +10,43 @@
 $con = mysqli_connect("localhost", "root", "", "firsat");
 
 ?>
+<?php
 
+if(isset($_GET['urun_duzenle'])){
+    $get_id = $_GET['urun_duzenle'];
+    $get_urun = "select * from urunler where id_urun = '$get_id'";
+    $run_urun = mysqli_query($con, $get_urun);
+    $i = 0;
+
+  $row_urun = mysqli_fetch_array($run_urun);
+
+      $id_urun = $row_urun['id_urun'];
+      $urun_baslik = $row_urun['urun_baslik'];
+      $urun_resim = $row_urun['urun_resim'];
+      $urun_fiyat = $row_urun['urun_fiyat'];
+      $urun_aciklama = $row_urun['urun_aciklama'];
+      $urun_anahtar_kelime = $row_urun['urun_anahtar_kelime'];
+      $urun_kategori = $row_urun['urun_kategori'];
+      $urun_marka = $row_urun['urun_marka'];
+
+    $get_kategori = "select * from kategoriler where id_kategori = '$urun_kategori'";
+    $run_kategori = mysqli_query($con, $get_kategori);
+    $row_kategori = mysqli_fetch_array($run_kategori);
+    $kategori_baslik = $row_kategori['kategori_baslik'];
+
+    $get_marka = "select * from markalar where id_marka = '$urun_marka'";
+    $run_marka = mysqli_query($con, $get_marka);
+    $row_marka = mysqli_fetch_array($run_marka);
+    $marka_baslik = $row_marka['marka_baslik'];
+
+}
+
+?>
 <html>
 
 
 <head>
-    <title> Ürün Ekleme </title>
+    <title> Ürün Güncelle </title>
 
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
     <script>tinymce.init({ selector: 'textarea' });</script>
@@ -25,19 +56,19 @@ $con = mysqli_connect("localhost", "root", "", "firsat");
 <body bgcolor=#87ceeb>
 
 
-<form action="urun_ekle.php" method="post" enctype="multipart/form-data">
+<form action=" " method="post" enctype="multipart/form-data">
 
 
     <table align="center" width="795" border="2" bgcolor="orange">
 
         <tr align="center">
 
-            <td colspan="7"><h2> Ekleme işlemi burada yapılacaktır..</h2></td>
+            <td colspan="7"><h2> Ürün güncelleme ve Düzenleme</h2></td>
         </tr>
 
         <tr>
             <td align="right"><b>Ürün Başlığı:</b></td>
-            <td><input type="text" name="urun_baslik" size="60"/></td>
+            <td><input type="text" name="urun_baslik" size="60" value="<?php echo $urun_baslik;?>"/></td>
         </tr>
 
 
@@ -45,7 +76,7 @@ $con = mysqli_connect("localhost", "root", "", "firsat");
             <td align="right"><b>Ürün Kategorisi:</b></td>
             <td>
                 <select name="urun_kategori">
-                    <option>Bir Kategori Seçin</option>
+                    <option><?php echo $kategori_baslik; ?></option>
                     <?php
                     global $con;
                     $get_kategori = "select * from kategoriler";
@@ -74,7 +105,7 @@ $con = mysqli_connect("localhost", "root", "", "firsat");
             <td>
                 <select name="urun_marka">
 
-                    <option>Bir marka seç</option>
+                    <option><?php echo $marka_baslik; ?></option>
 
                     <?php
 
@@ -101,41 +132,44 @@ $con = mysqli_connect("localhost", "root", "", "firsat");
 
         <tr>
             <td align="right"><b>Ürün Resmi:</b></td>
-            <td><input type="file" name="urun_resim"/></td>
+            <td><input type="file" name="urun_resim"/><img src="urun_resim/<?php echo $urun_resim; ?>" width="60" height="60"/></td>
         </tr>
-
 
         <tr>
             <td align="right"><b>Ürün Fiyatı:</b></td>
-            <td><input type="text" name="urun_fiyat"/></td>
+
+            <td><input type="text" name="urun_fiyat" <?php echo $urun_fiyat;?>/></td>
         </tr>
 
 
         <tr>
             <td align="right"><b>Ürün Açıklaması:</b></td>
-            <td><textarea name="urun_aciklama" cols="20" rows="10"/></textarea> </td>
+            <td><textarea name="urun_aciklama" cols="20" rows="10" <?php echo $urun_aciklama; ?>/></textarea> </td>
         </tr>
 
 
         <tr>
             <td align="right"><b>Ürün Anahtar Kelimeleri:</b></td>
-            <td><input type="text" name="urun_anahtar_kelime" size="50"/></td>
+            <td><input type="text" name="urun_anahtar_kelime" size="50" <?php echo $urun_anahtar_kelime; ?>/></td>
         </tr>
 
 
         <tr align="center">
 
-            <td colspan="8"><input type="submit" name="insert_post" value="Şimdi Ekle"/></td>
+            <td colspan="8"><input type="submit" name="update_urun" value="Ürün Güncelle"/></td>
 
         </tr>
 
     </table>
     <?php
 
-    if (isset($_POST['insert_post'])) {
+    if (isset($_POST['urun_update'])) {
+
+        $update_id = $id_urun;
         $urun_baslik = $_POST['urun_baslik'];
         $urun_kategori = $_POST['urun_kategori'];
         $urun_marka = $_POST['urun_marka'];
+
         $urun_fiyat = $_POST['urun_fiyat'];
         $urun_aciklama = $_POST['urun_aciklama'];
         $urun_anahtar_kelime = $_POST['urun_anahtar_kelime'];
@@ -146,17 +180,16 @@ $con = mysqli_connect("localhost", "root", "", "firsat");
 
         move_uploaded_file($urun_resim_tmp, "urun_resim/$urun_resim");
 
-        $urun_ekle = "insert into urunler
-            (urun_baslik, urun_kategori,urun_marka, urun_fiyat, urun_aciklama,urun_resim, urun_anahtar_kelime )
-            values('$urun_baslik', '$urun_kategori', '$urun_marka', '$urun_fiyat', '$urun_aciklama', '$urun_resim', '$urun_anahtar_kelime')";
+        $urun_update = "update urunler set urun_kategori = '$urun_kategori', urun_marka = '$urun_marka', urun_baslik = '$urun_baslik', urun_fiyat = '$urun_fiyat', urun_aciklama = '$urun_aciklama', urun_resim = '$urun_resim'
+        , urun_anahtar_kelime = '$urun_anahtar_kelime' where id_urun = '$update_id'";
 
 
-        $urun_ekle = mysqli_query($con, $urun_ekle);
+        $run_urun = mysqli_query($con, $urun_update);
 
-        if ($urun_ekle) {
+        if ($run_urun) {
 
-            echo "<script>alert('urun eklendi!')</script>";
-            echo "<script>window.open('index.php?urun_ekle','_self')</script>";
+            echo "<script>alert('Urun güncellendi!')</script>";
+            echo "<script>window.open('index.php?urun_goster','_self')</script>";
 
 
         }

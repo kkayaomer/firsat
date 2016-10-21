@@ -8,103 +8,32 @@
  * Date: 28.09.2016
  * Time: 13:11
  */
-session_start();
-include("../fonksiyon/fonksiyon.php");
-
-//include("include/db.php");
 ?>
 
-<html>
+<?php
 
-<head>
+$user = $_SESSION['mus_email'];
 
-    <title>firsat.com </title>
-
-    <link rel="stylesheet" href="../styles/style.css" media="all"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-</head>
-<body>
-
-<!--main container başlangıç yeri.--->
-<div class="main_wrapper">
-<!--header  başlangıç yeri.--->
-<div class="header_wrapper">
-
-    <div style="height: 140px;">
-        <a href="../index.php"><img id="logo" src="../resimler/logo.gif"/></a>
-        <img id="banner" src="../resimler/banner.gif"/>
-    </div>
-</div>
-<!--header bitiş yeri.--->
-
-<!--navigation bar başlangıç yeri.--->
-<div class="menubar">
-
-    <ul id="menu">
-        <li><a href="../index.php">Anasayfa</a></li>
-        <li><a href="../urunler.php">Ürünler</a></li>
-        <li><a href="hesabim.php">Hesabım</a></li>
-        <li><a href="#">KaydOl</a></li>
-        <li><a href="../sepet.php">Alışveriş Sepeti</a></li>
-        <li><a href="#">İletişim</a></li>
-    </ul>
-
-    <div id="form">
-        <form method="get" action="../results.php" enctype="multipart/form-data">
-            <input type="text" name="user_query" placeholder="Bir ürün ara"/>
-            <input type="submit" name="search" value="search"/>
-        </form>
-    </div>
-
-</div>
-<!--navigation bar bitiş yeri.--->
-
-
-<!--content wrapper başlangıç--->
-<div class="content_wrapper">
-
-<div id="sidebar">
-    <div class="sidebar-inner">
-
-
-        <div id="sidebar_title"> Kategoriler</div>
-        <ul id="kategori">
-
-            <?php getKategori(); ?>
-
-        </ul>
-
-
-        <div id="sidebar_title"> Markalar</div>
-        <ul id="marka">
-
-            <?php getMarka(); ?>
-
-        </ul>
-
-    </div>
-</div>
-
-<div id="content_area">
-<?php Alisveris_Sepeti(); ?>
-<div id="alisveris_sepeti">
-                                                 <span
-                                                     style="float: right; font-size: 18px; padding: 5px; line-height:40px; ">Hoşgeldiniz!  <b
-                                                         style="color:yellow">Alışveriş Sepeti
-                                                         -</b>Toplam Adet: <?php Toplam_Adet(); ?>
-                                                     Toplam Fiyat: <?php Toplam_Fiyat(); ?> <a
-                                                         href="../sepet.php" style="color: yellow">Sepete Git</a>
-
-
-                                                 </span>
-
-</div>
-<form action="musteri_kayit.php" method="post" enctype="multipart/form-data"/>
+$get_mus   = "select * from musteri where mus_email = '$user'";
+$run_mus  = mysqli_query($con, $get_mus);
+ $row_mus   = mysqli_fetch_array($run_mus);
+$id_musteri  = $row_mus['id_musteri'];
+$mus_adi   = $row_mus['mus_adi'];
+$mus_soyadi = $row_mus['mus_soyadi'];
+$mus_email  = $row_mus['mus_email'];
+$mus_sifre = $row_mus['mus_sifre'];
+$mus_ulke = $row_mus['mus_ulke'];
+$mus_sehir = $row_mus['mus_sehir'];
+$mus_adres = $row_mus['mus_adres'];
+$mus_telefon = $row_mus['mus_telefon'];
+$mus_image = $row_mus['mus_image'];
+?>
+<form action="" method="post" enctype="multipart/form-data"/>
 <table align="center" width="750" bgcolor="orange">
 
 <tr>
     <td colspan="8">
-        <h2>Yeni Hesap Oluştur</h2>
+        <h2> Hesabı Güncelle</h2>
     </td>
 </tr>
 <tr>
@@ -120,31 +49,31 @@ include("../fonksiyon/fonksiyon.php");
 
 <tr>
     <td align="right"> Musteri Adı:</td>
-    <td><input type="text" name="mus_adi"/></td>
+    <td><input type="text" name="mus_adi" value="<?php echo $mus_adi; ?>"/></td>
 </tr>
 
 <tr>
     <td align="right">Soyadı:</td>
-    <td><input type="text" name="mus_soyadi"/></td>
+    <td><input type="text" name="mus_soyadi" value="<?php echo $mus_soyadi; ?>"/></td>
 </tr>
 
 <tr>
     <td align="right">Email:</td>
-    <td><input type="text" name="mus_email"></td>
+    <td><input type="text" name="mus_email" value="<?php echo $mus_email; ?>"></td>
 </tr>
 
 <tr>
     <td align="right">Şifre:</td>
-    <td><input type="password" name="mus_sifre"></td>
+    <td><input type="password" name="mus_sifre" value="<?php echo $mus_sifre; ?>"></td>
 </tr>
 
 <tr>
     <td align="right">Ülke:</td>
 
     <td>
-        <select name="mus_ulke">
+        <select name="mus_ulke"  >
 
-            <option>-------</option>
+            <option><?php echo $mus_ulke; ?></option>
             <option value="TR">Türkiye</option>
             <option value="VI">ABD Virgin Adaları</option>
             <option value="DE">Almanya</option>
@@ -166,41 +95,12 @@ include("../fonksiyon/fonksiyon.php");
             <option value="BZ">Belize</option>
             <option value="BJ">Benin</option>
             <option value="BY">Beyaz Rusya</option>
-            <option value="AE">Birleşik Arap Emirlikleri</option>
-            <option value="BO">Bolivya</option>
-            <option value="BA">Bosna Hersek</option>
-            <option value="BR">Brezilya</option>
-            <option value="BN">Brunei</option>
             <option value="BG">Bulgaristan</option>
             <option value="MM">Burma</option>
             <option value="GI">Cebelitarık</option>
             <option value="CZ">Çek Cumhuriyeti</option>
             <option value="CN">Çin</option>
-            <option value="DK">Danimarka</option>
-            <option value="DO">Dominik Cumhuriyeti</option>
-            <option value="EC">Ekvator</option>
-            <option value="SV">El Salvador</option>
-            <option value="ID">Endonezya</option>
-            <option value="ER">Eritre</option>
-            <option value="AM">Ermenistan</option>
-            <option value="EE">Estonya</option>
-            <option value="MA">Fas</option>
-            <option value="FJ">Fiji</option>
-            <option value="PH">Filipinler</option>
-            <option value="FI">Finlandiya</option>
-            <option value="FR">Fransa</option>
-            <option value="PF">Fransız Polinezyası</option>
-            <option value="GD">Grenada</option>
-            <option value="GP">Guadalup</option>
-            <option value="GU">Guam</option>
-            <option value="GT">Guatemala</option>
-            <option value="ZA">Güney Afrika</option>
-            <option value="GE">Gürcistan</option>
-            <option value="HR">Hırvatistan</option>
-            <option value="IN">Hindistan</option>
-            <option value="NL">Hollanda</option>
-            <option value="AN">Hollanda Antilleri</option>
-            <option value="HN">Honduras</option>
+           <option value="HN">Honduras</option>
             <option value="HK">Hong Kong</option>
             <option value="VG">İngiliz Virginia Adaları</option>
             <option value="UK">İngiltere</option>
@@ -283,8 +183,8 @@ include("../fonksiyon/fonksiyon.php");
 <tr>
     <td align="right">Şehir:</td>
     <td>
-        <select name="mus_sehir">
-            <option>------
+        <select name="mus_sehir" >
+            <option><?php echo $mus_sehir; ?></option>
             <option>Adana</option>
             <option>Adıyaman</option>
             <option>Afyon</option>
@@ -354,51 +254,37 @@ include("../fonksiyon/fonksiyon.php");
 
 <tr>
     <td align="right">Adres:</td>
-    <td><textarea cols="20" rows="10" name="mus_adres"></textarea></td>
+    <td><textarea cols="20" rows="10" name="mus_adres" value="<?php echo $mus_adres; ?>"></textarea></td>
 </tr>
 
 <tr>
     <td align="right">Telefon:</td>
-    <td><input type="text" name="mus_telefon"></td>
+    <td><input type="text" name="mus_telefon" value="<?php echo $mus_telefon; ?>"></td>
 </tr>
 
 <tr>
     <td align="right">Profil:</td>
-    <td><input type="file" name="mus_image"></td>
+    <td><input type="file" name="mus_image"/><img src="<?php echo $mus_image; ?>"
+    width ="50" height = "50"/>
+    </td>
 </tr>
 <tr align="" center>
-    <td colspan="6"><input type="submit" name="register" value="Hesap Oluştur"/></td>
+    <td colspan="6"><input type="submit" name="update" value="Hesabı Güncelle"/></td>
 </tr>
 
 </table>
 </form>
-</div>
 
-</div>
 <!--content wrapper bitiş--->
 
 
-<div id="footer">
 
-    <h2 style="text-align: center; padding-top:20px; ">&copy; 2016 by www.firsat.com</h2>
-
-</div>
-
-</div>
-<script type="text/javascript">
-    $(function () {
-        $('.content_wrapper').css('min-height', $('.sidebar-inner').height());
-    });
-</script>
-<!--main container bitiş yeri-->
-</body>
-
-</html>
 <?php
 
-if (isset($_POST['register'])) {
+if (isset($_POST['update'])) {
     global $con;
     $ip = getIp();
+    $id_musteri = $id_musteri;
     $mus_adi = $_POST['mus_adi'];
 
     $mus_soyadi = $_POST['mus_soyadi'];
@@ -419,32 +305,19 @@ if (isset($_POST['register'])) {
     $mus_image = "musteri_image" . '/' . $mus_image;
 
     move_uploaded_file($mus_image_tmp, $mus_image);
-    $insert_mus = "INSERT INTO `musteri` (`mus_ip`, `mus_adi`, `mus_soyadi`, `mus_email`, `mus_sifre`, `mus_ulke`, `mus_sehir`, `mus_adres`, `mus_telefon`, `mus_image`)
-       values ('$ip','$mus_adi','$mus_soyadi','$mus_email','$mus_sifre','$mus_ulke','$mus_sehir','$mus_adres','$mus_telefon','$mus_image')";
+    $update_mus = "update musteri set mus_adi = '$mus_adi', mus_soyadi = '$mus_soyadi', mus_email= '$mus_email', mus_sifre= '$mus_sifre', mus_ulke = '$mus_ulke', mus_sehir= '$mus_sehir', mus_adres = '$mus_adres', mus_telefon= '$mus_telefon', mus_image = '$mus_image'
+    where id_musteri = '$id_musteri' ";
 
 
-    $run_mus = mysqli_query($con, $insert_mus);
+    $run_update = mysqli_query($con, $update_mus);
 
-    $sel_sepet = "select * from alisveris_sepeti where ip_addres ='$ip'";
+if($run_update){
 
-    $run_sepet =mysqli_query($con, $sel_sepet);
+    echo "<script>alert('Hesabınız başarıyla güncellendi!')</script>";
+    echo "<script>window.open('hesabim.php', '_self')</script>";
+}
 
 
-    $check_sepet = mysqli_num_rows($run_sepet);
-
-
-    if ($check_sepet == 0) {
-
-        $_SESSION['mus_email'] = $mus_email;
-        echo "<script>alert('Hesap başarıyla oluşturuldu, Teşekkürler!')</script>";
-        echo "<script>window.open('musteri/hesabim.php','_self')</script>";
-
-    } else {
-
-        $_SESSION['mus_email'] = $mus_email;
-        echo "<script>alert('Hesap başarıyla oluşturuldu, Teşekkürler!')</script>";
-        echo "<script>window.open('checkout.php','_self')</script>";
-    }
 
 }
 
