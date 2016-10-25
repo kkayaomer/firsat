@@ -1,3 +1,8 @@
+
+<?php
+include("../fonksiyon/session_control.php");
+?>
+
 <!DOCTYPE>
 
 
@@ -29,6 +34,9 @@
             </div>
            <div id="left">
 
+
+
+
                 <?php
 
                 if (isset($_GET['urun_ekle'])) {
@@ -42,6 +50,34 @@
                 if (isset($_GET['urun_duzenle'])) {
 
                     include("urun_duzenle.php");
+                }
+                if (isset($_GET['kategori_ekle'])) {
+
+                    include("kategori_ekle.php");
+                }
+                if (isset($_GET['kategori_goster'])) {
+
+                    include("kategori_goster.php");
+                }
+                if (isset($_GET['kategori_duzenle'])) {
+
+                    include("kategori_duzenle.php");
+                }
+                if (isset($_GET['marka_ekle'])) {
+
+                    include("marka_ekle.php");
+                }
+                if (isset($_GET['marka_goster'])) {
+
+                    include("marka_goster.php");
+                }
+                if (isset($_GET['marka_duzenle'])) {
+
+                    include("marka_duzenle.php");
+                }
+                if (isset($_GET['musteri_goster'])) {
+
+                    include("musteri_goster.php");
                 }
                 ?>
 

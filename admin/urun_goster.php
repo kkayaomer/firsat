@@ -1,6 +1,13 @@
+
+
+
+
 <?php
 include("../fonksiyon/db.php");
+include("../fonksiyon/session_control.php");
+
 ?>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" xmlns="http://www.w3.org/1999/html"/>
  <table width = "795" align = "center" bgcolor ="orange">
 
   <tr align ="center">
@@ -39,7 +46,7 @@ include("../fonksiyon/db.php");
     <td><img src="urun_resim/<?php echo $urun_resim;?>" width="60" height="60"></td>
     <td><?php echo $urun_fiyat;?></td>
     <td><a href="index.php?urun_duzenle=<?php echo $id_urun;?>">Düzenle</a></td>
-    <td><a href="urun_sil.php?urun_duzenle=<?php echo $id_urun; ?>">Sil</a></td>
+    <td><a href="urun_sil.php?urun_sil=<?php echo $id_urun; ?>">Sil</a></td>
 </tr>
 <?php } ?>
  </table>

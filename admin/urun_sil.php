@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" xmlns="http://www.w3.org/1999/html"/>
 <?php
 /**
  * Created by PhpStorm.
@@ -13,7 +14,7 @@ if(isset($_GET['urun_sil'])){
  $run_delete = mysqli_query($con, $urun_sil);
     if($run_delete){
 
-        echo "<script>alert('Bir ürün silindi!)</script>";
+        echo "<script>alert('Ürün silindi!)</script>";
         echo "<script>window.open('index.php?urun_goster', '_self')</script>";
     }
 }

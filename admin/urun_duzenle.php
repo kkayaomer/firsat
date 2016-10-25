@@ -8,7 +8,7 @@
  * Time: 13:11
  */
 $con = mysqli_connect("localhost", "root", "", "firsat");
-
+include("../fonksiyon/session_control.php");
 ?>
 <?php
 

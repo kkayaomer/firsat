@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
- body{background: #cccccc;}
+ body{background: beige;}
 
  .main_wrapper {
      width:1000px;
@@ -46,7 +46,7 @@ footer, header, hgroup, menu, nav, section {
  #left {
      width: 795px;
      height: 800px;
-    background-image: url("../resims/admins.jpg");
+    background-image: url("../resims/bac1cc.gif");
      float: left;
  }
 #right {

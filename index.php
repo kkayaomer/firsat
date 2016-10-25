@@ -44,7 +44,7 @@ include("fonksiyon/fonksiyon.php");
             <li><a href="musteri/hesabim.php">Hesabım</a></li>
             <li><a href="#">KaydOl</a></li>
             <li><a href="sepet.php">Alışveriş Sepeti</a></li>
-            <li><a href="#">İletişim</a></li>
+            <li><a href="iletisim.php">İletişim</a></li>
 
         </ul>
 

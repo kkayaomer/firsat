@@ -7,7 +7,17 @@
  * Date: 28.09.2016
  * Time: 13:11
  */
+include("../fonksiyon/session_control.php");
 $con = mysqli_connect("localhost", "root", "", "firsat");
+if(!isset($_SESSION['kullanici_email'])){
+
+    echo "<script>window.open('login.php?not_admin=You are not an Admin!', '_self')</script>";
+
+}
+
+else {
+
+
 
 ?>
 
@@ -164,6 +174,7 @@ $con = mysqli_connect("localhost", "root", "", "firsat");
 
     }
     ?>
+    <?php } ?>
 </form>
 
 
