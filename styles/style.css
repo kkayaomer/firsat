@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import "owl.carousel.css";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,7 +23,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-body{background:skyblue;}
+body{background:beige;}
 
 
 
@@ -40,23 +37,42 @@ body{background:skyblue;}
     width: 1000px;
    overflow: auto;
     margin: auto;
+    background: url("../resimler/gg.jpg") no-repeat 0 0;
+    background-size: cover;
 }
 #logo {
     float: left;
     width: 300px;
     height: 140px;
 }
-
+#logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.product-slider{
+    width: 680px;
+    float: right;
+}
 #banner {
     float: right;
     width: 700px;
     height: 140px;
 }
 
+#deneme .item{
+    margin: 2px;
+}
+#deneme.item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .menubar {
     width: 1000px;
     height: 50px;
-    background: gray;
+    background: #EA5C54 ;
     color: white;
 
 }
@@ -101,14 +117,15 @@ text-decoration: underline;
     float:right;
     margin:0;
     padding: 0 0 30px 0;
-    background: #cccccc;
+    background: url("../resimler/anadolu-arkaplan.jpg");
+    background-size: cover;
 }
 
 
 #sidebar {
     width: 200px;
     height: 100%;
-    background: black;
+    background: olivedrab;
     position: absolute;
     top: 0;
     left: 0;
@@ -179,7 +196,8 @@ text-decoration: underline;
 #footer {
     width: 1000px;
     height: 100px;
-    background: gray;
+    height: 100px;
+    background: #021725 ;
     clear: both;
-
+    color: white
 }

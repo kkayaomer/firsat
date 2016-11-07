@@ -8,8 +8,15 @@
  * Time: 17:31
  */
 
-include("fonksiyon/fonksiyon.php");
+
+
+include("../fonksiyon/fonksiyon.php");
 session_start();
+if(isset($_SESSION["mus_email"])==false){
+
+    header("Location: checkout.php");
+    die();
+}
 ?>
 
 <html>
@@ -29,8 +36,8 @@ session_start();
     <div class="header_wrapper">
 
         <div style="height: 140px;">
-            <a href="../index.php"><img id="logo" src="../resimler/logo.gif"/></a>
-            <img id="banner" src="../resimler/banner.gif"/>
+            <a href="../index.php"><img id="logo" src="../resimler/Logo.jpg"/></a>
+            <img id="banner" src="../resimler/gg.jpg"/>
         </div>
     </div>
     <!--header bitiş yeri.--->

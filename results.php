@@ -28,8 +28,8 @@ include("fonksiyon/fonksiyon.php");
     <div class="header_wrapper">
 
         <div style="height: 140px;">
-            <a href="index.php"><img id="logo" src="resimler/logo.gif"/></a>
-            <img id="banner" src="resimler/banner.gif"/>
+            <a href="index.php"><img id="logo" src="resimler/Logo.jpg"/></a>
+            <img id="banner" src="resimler/gg.jpg"/>
         </div>
     </div>
     <!--header bitiş yeri.--->
@@ -129,7 +129,7 @@ include("fonksiyon/fonksiyon.php");
 
                                     <p><b>$urun_fiyat</b></p>
 
-                                    <a href='detay.php?id_urun=$id_urun' style='float: left;'>Detay</a>
+                                    <a href='detay.php?id_urun=$id_urun' style='float: left; '>Detay</a>
                                     <a href='index.php'><button style='float: right'>Sepete Ekle</button></a>
 
 

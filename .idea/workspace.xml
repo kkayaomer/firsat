@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/musteri/hesabim.php" line="15" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="07932037-f9a2-47da-88d5-5c8e24120f7c" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\wamp\www\firsat\musteri\musteri_image\Samsung-Galaxy.jpg" afterPath="$PROJECT_DIR$/musteri/musteri_image/mus_imagemus_9.jpg" />
-      <change type="MOVED" beforePath="C:\wamp\www\firsat\musteri\musteri_image\murat.jpg" afterPath="$PROJECT_DIR$/musteri/musteri_image/musteri_image.jpg" />
-      <change type="MOVED" beforePath="C:\wamp\www\firsat\musteri\musteri_image\mus_4.jpg" afterPath="$PROJECT_DIR$/musteri/musteri_image/mus_3.jpg.jpg" />
-      <change type="MOVED" beforePath="C:\wamp\www\firsat\musteri\musteri_image\mus_5.jpg" afterPath="$PROJECT_DIR$/musteri/musteri_image/mus_imagemus_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/musteri/HoboStd.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/owl.carousel.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musteri/checkout.php" afterPath="$PROJECT_DIR$/musteri/checkout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/detay.php" afterPath="$PROJECT_DIR$/detay.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musteri/hesabi_duzenle.php" afterPath="$PROJECT_DIR$/musteri/hesabi_duzenle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musteri/hesabim.php" afterPath="$PROJECT_DIR$/musteri/hesabim.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iletisim.php" afterPath="$PROJECT_DIR$/iletisim.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/style/style.css" afterPath="$PROJECT_DIR$/admin/style/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/urun_duzenle.php" afterPath="$PROJECT_DIR$/admin/urun_duzenle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/urun_ekle.php" afterPath="$PROJECT_DIR$/admin/urun_ekle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/urun_goster.php" afterPath="$PROJECT_DIR$/admin/urun_goster.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/urun_sil.php" afterPath="$PROJECT_DIR$/admin/urun_sil.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/login.php" afterPath="$PROJECT_DIR$/admin/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musteri/musteri_giris.php" afterPath="$PROJECT_DIR$/musteri/musteri_giris.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musteri/musteri_kayit.php" afterPath="$PROJECT_DIR$/musteri/musteri_kayit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results.php" afterPath="$PROJECT_DIR$/results.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sepet.php" afterPath="$PROJECT_DIR$/sepet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonksiyon/session_control.php" afterPath="$PROJECT_DIR$/fonksiyon/session_control.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musteri/styles/style.css" afterPath="$PROJECT_DIR$/musteri/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urunler.php" afterPath="$PROJECT_DIR$/urunler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="firsat.iws" />
@@ -37,66 +48,46 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urun_ekle.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/urun_ekle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="3" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="3230">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="session_control.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fonksiyon/session_control.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="1" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urun_sil.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/urun_sil.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/style/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iletisim.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/iletisim.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.21469575" vertical-offset="0" max-vertical-offset="871">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="38" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2754">
+            <state line="107" column="50" selection-start="8553" selection-end="8553" vertical-scroll-proportion="-68.30769" vertical-offset="43" max-vertical-offset="3060">
               <folding>
-                <marker date="1477322828258" expanded="false" signature="3343:3356" placeholder="..." />
-                <marker date="1477322828258" expanded="false" signature="3478:3491" placeholder="..." />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1477569800021" expanded="true" signature="9041:9054" placeholder="..." />
+                <marker date="1477569800021" expanded="true" signature="9176:9189" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="musteri_giris.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/musteri/musteri_giris.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="31" selection-start="766" selection-end="766" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="1598">
+              <folding>
+                <element signature="e#6#86#0" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#h2#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hesabim.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/musteri/hesabim.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.29276693" vertical-offset="0" max-vertical-offset="3536">
+              <folding>
+                <element signature="e#122#202#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1478528939352" expanded="true" signature="4242:4255" placeholder="..." />
+                <marker date="1478528939352" expanded="true" signature="4495:4508" placeholder="..." />
+                <marker date="1478528939352" expanded="true" signature="5029:5042" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -120,22 +111,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/admin/kategori_goster.php" />
-        <option value="$PROJECT_DIR$/admin/marka_goster.php" />
-        <option value="$PROJECT_DIR$/admin/kategori_duzenle.php" />
-        <option value="$PROJECT_DIR$/admin/kategori_ekle.php" />
-        <option value="$PROJECT_DIR$/admin/kategori_sil.php" />
-        <option value="$PROJECT_DIR$/admin/marka_duzenle.php" />
-        <option value="$PROJECT_DIR$/admin/marka_ekle.php" />
-        <option value="$PROJECT_DIR$/admin/marka_sil.php" />
-        <option value="$PROJECT_DIR$/admin/musteri_sil.php" />
-        <option value="$PROJECT_DIR$/admin/urun_duzenle.php" />
-        <option value="$PROJECT_DIR$/admin/urun_ekle.php" />
-        <option value="$PROJECT_DIR$/admin/index.php" />
-        <option value="$PROJECT_DIR$/fonksiyon/session_control.php" />
-        <option value="$PROJECT_DIR$/admin/style/style.css" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/urunler.php" />
+        <option value="$PROJECT_DIR$/musteri/musteri_kayit.php" />
+        <option value="$PROJECT_DIR$/musteri/checkout.php" />
         <option value="$PROJECT_DIR$/iletisim.php" />
+        <option value="$PROJECT_DIR$/js/Javascript" />
+        <option value="$PROJECT_DIR$/js/deneme.js" />
+        <option value="$PROJECT_DIR$/styles/style.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/sepet.php" />
+        <option value="$PROJECT_DIR$/admin/login.php" />
+        <option value="$PROJECT_DIR$/musteri/fonksiyon/kontrol.php" />
+        <option value="$PROJECT_DIR$/musteri/fonksiyon/captcha.php" />
+        <option value="$PROJECT_DIR$/musteri/captcha.php" />
+        <option value="$PROJECT_DIR$/musteri/hesabim.php" />
+        <option value="$PROJECT_DIR$/musteri/hesabi_duzenle.php" />
+        <option value="$PROJECT_DIR$/musteri/musteri_giris.php" />
       </list>
     </option>
   </component>
@@ -200,6 +191,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="musteri" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firsat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firsat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="musteri" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fonksiyon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -213,18 +222,24 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Blog" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\firsat\resimler" />
+      <recent name="C:\wamp\www\firsat\styles" />
+      <recent name="C:\wamp\www\firsat\js" />
       <recent name="C:\wamp\www\firsat\admin\resims" />
       <recent name="C:\wamp\www\firsat\musteri" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\firsat\admin" />
       <recent name="C:\wamp\www\firsat\musteri" />
+      <recent name="C:\wamp\www\firsat\musteri\fonksiyon" />
+      <recent name="C:\wamp\www\firsat\resimler" />
+      <recent name="C:\wamp\www\firsat\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -259,6 +274,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14791666" sideWeight="0.6706392" order="0" side_tool="false" content_ui="combo" />
@@ -270,7 +286,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -290,100 +305,149 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/kategori_sil.php">
+    <entry file="file://$PROJECT_DIR$/styles/owl.carousel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.058553386" vertical-offset="0" max-vertical-offset="871" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3774" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/kategori_ekle.php">
+    <entry file="file://$PROJECT_DIR$/odeme.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.19517796" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/kategori_duzenle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="37" selection-start="225" selection-end="225" vertical-scroll-proportion="0.078071184" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/marka_sil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="236" selection-end="236" vertical-scroll-proportion="0.058553386" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/marka_ekle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="319" selection-end="319" vertical-scroll-proportion="0.21469575" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/marka_duzenle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="143" selection-end="143" vertical-scroll-proportion="0.058553386" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/musteri_sil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="191" selection-end="191" vertical-scroll-proportion="0.039035592" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/urun_duzenle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="127" selection-end="127" vertical-scroll-proportion="0.09758898" vertical-offset="0" max-vertical-offset="3604" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/urun_sil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
+        <state line="4" column="6" selection-start="172" selection-end="172" vertical-scroll-proportion="0.078071184" vertical-offset="0" max-vertical-offset="871">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/urun_ekle.php">
+    <entry file="file://$PROJECT_DIR$/cikis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="3230">
+        <state line="7" column="2" selection-start="105" selection-end="105" vertical-scroll-proportion="0.13662457" vertical-offset="0" max-vertical-offset="871">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fonksiyon/session_control.php">
+    <entry file="file://$PROJECT_DIR$/musteri/cikis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
+        <state line="7" column="2" selection-start="108" selection-end="108" vertical-scroll-proportion="0.13662457" vertical-offset="0" max-vertical-offset="871">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
+    <entry file="file://$PROJECT_DIR$/js/deneme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1615">
+        <state line="4" column="3" selection-start="37" selection-end="37" vertical-scroll-proportion="0.07580825" vertical-offset="0" max-vertical-offset="897">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/resims/bac1cc.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="16" selection-start="2319" selection-end="2319" vertical-scroll-proportion="0.0" vertical-offset="1976" max-vertical-offset="3536">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/style/style.css">
+    <entry file="file://$PROJECT_DIR$/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1275">
+        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.039035592" vertical-offset="0" max-vertical-offset="871">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musteri/checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="0" selection-start="3656" selection-end="3656" vertical-scroll-proportion="2.903226" vertical-offset="0" max-vertical-offset="3240">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1477487689917" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1477487689917" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musteri/fonksiyon/fonksiyon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5355">
+          <folding>
+            <marker date="1476947716375" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476947716375" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musteri/captcha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.6245695" vertical-offset="0" max-vertical-offset="871">
+          <folding>
+            <element signature="e#6#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sepet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="0" selection-start="8470" selection-end="8533" vertical-scroll-proportion="0.5901263" vertical-offset="3260" max-vertical-offset="4590">
+          <folding>
+            <marker date="1478505778560" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1478505778560" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musteri/hesabi_duzenle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="43" selection-start="439" selection-end="439" vertical-scroll-proportion="0.3764569" vertical-offset="0" max-vertical-offset="5610">
+          <folding>
+            <element signature="e#164#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musteri/musteri_giris.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="31" selection-start="766" selection-end="766" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="1598">
+          <folding>
+            <element signature="e#6#86#0" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#h2#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="38" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2754">
+        <state line="107" column="50" selection-start="8553" selection-end="8553" vertical-scroll-proportion="-68.30769" vertical-offset="43" max-vertical-offset="3060">
           <folding>
-            <marker date="1477322828258" expanded="false" signature="3343:3356" placeholder="..." />
-            <marker date="1477322828258" expanded="false" signature="3478:3491" placeholder="..." />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1477569800021" expanded="true" signature="9041:9054" placeholder="..." />
+            <marker date="1477569800021" expanded="true" signature="9176:9189" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iletisim.php">
+    <entry file="file://$PROJECT_DIR$/musteri/hesabim.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.21469575" vertical-offset="0" max-vertical-offset="871">
-          <folding />
+        <state line="15" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.29276693" vertical-offset="0" max-vertical-offset="3536">
+          <folding>
+            <element signature="e#122#202#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1478528939352" expanded="true" signature="4242:4255" placeholder="..." />
+            <marker date="1478528939352" expanded="true" signature="4495:4508" placeholder="..." />
+            <marker date="1478528939352" expanded="true" signature="5029:5042" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

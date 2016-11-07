@@ -156,13 +156,13 @@ include("fonksiyon/fonksiyon.php");
 
                             while ($uur_fiyat = mysqli_fetch_array($run_urun_fiyat)) {
 
-                                $urun_fiyat = array($uur_fiyat['urun_fiyat']);
+                                $urun_fiyat = $uur_fiyat['urun_fiyat'];
                                 $urun_baslik = $uur_fiyat['urun_baslik'];
                                 $urun_resim = $uur_fiyat['urun_resim'];
                                 $tek_fiyat = $uur_fiyat['urun_fiyat'];
-                                $values = array_sum($urun_fiyat);
 
-                                $toplam += $values;
+
+                               // $toplam += $urun_fiyat;
 
 
                                 ?>
@@ -183,12 +183,12 @@ include("fonksiyon/fonksiyon.php");
                                         $run_miktar = mysqli_query($con, $update_miktar);
 
                                         //$_SESSION['miktar'] = $miktar;
-                                        $toplam = $toplam*$miktar;
-
+                                        //$toplam = $toplam*$miktar;
+                                        updatesepet();
                                     }
 
                                     ?>
-                                    <td><?php echo $tek_fiyat; ?></td>
+                                    <td><?php echo   $urun_fiyat*$sepet_miktar;$toplam = $toplam +$urun_fiyat*$sepet_miktar;  ?></td>
 
                                 </tr>
 
@@ -215,13 +215,13 @@ include("fonksiyon/fonksiyon.php");
                 </form>
 
                 <?php
-               global $con;
-                $ip = getIp();
+
+
                 function updatesepet(){
                 if (isset($_POST['update_sepet'])) {
-
+                    global $con;
                     foreach ($_POST['remove'] as $id_remove) {
-                        $delete_urun = "delete  from alisveris_sepeti where id_ur =".$id_remove." and ip_addres= '".$ip."'";
+                        $delete_urun = "delete  from alisveris_sepeti where id_ur =".$id_remove." and ip_addres= '". getIp()."'";
 
                         $run_delete = mysqli_query($con, $delete_urun);
                         if ($run_delete) {

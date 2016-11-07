@@ -13,5 +13,6 @@ if(!isset($_SESSION))
 if(!isset($_SESSION['kullanici_email'])){
 
     echo "<script>window.open('login.php?not_admin=You are not an Admin!', '_self')</script>";
+//    echo "<script>window.open('../admin/login.php?not_admin=You are not an Admin!', '_self')</script>";
 
 }

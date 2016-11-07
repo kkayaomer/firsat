@@ -1,6 +1,8 @@
 
 <?php
+
 include("../fonksiyon/session_control.php");
+
 ?>
 
 <!DOCTYPE>

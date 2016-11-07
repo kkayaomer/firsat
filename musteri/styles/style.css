@@ -56,7 +56,7 @@ body{background:skyblue;}
 .menubar {
     width: 1000px;
     height: 50px;
-    background: gray;
+    background: #EA5C54;
     color: white;
 
 }
@@ -87,6 +87,7 @@ body{background:skyblue;}
 #menu a:hover {
 color: orange; font-weight: bolder;
 text-decoration: underline;
+
 }
 
 #form {float: right; padding-right:8px; line-height: 50px; }
@@ -177,7 +178,9 @@ text-decoration: underline;
 #footer {
     width: 1000px;
     height: 100px;
-    background: gray;
+    background: #021725 ;
+    color: #ffffff;
     clear: both;
+    
 
 }

@@ -29,8 +29,8 @@ include("fonksiyon/fonksiyon.php");
                                             <div class="header_wrapper">
 
                                                         <div style="height: 140px;">
-                                                            <img id="logo" src="resimler/logo.gif"/>
-                                                            <img id="banner" src="resimler/banner.gif"/>
+                                                            <a href="index.php"><img id="logo" src="resimler/Logo.jpg"/></a>
+                                                            <img id="banner" src="resimler/Banner-Cjpg.jpg"/>
                                                         </div>
                                             </div>
                                            <!--header bitiş yeri.--->
