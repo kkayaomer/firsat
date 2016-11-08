@@ -6,15 +6,17 @@
  * Date: 21.10.2016
  * Time: 18:23
  */
+include("../fonksiyon/db.php");
 include("../fonksiyon/session_control.php");
+
 if(isset($_GET['marka_sil'])){
 
     $delete_id = $_GET['marka_sil'];
-    $marka_sil = "delete * from markalar where id_marka = '$delete_id'";
+    $marka_sil = "delete  from markalar where id_marka = '$delete_id'";
     $run_delete = mysqli_query($con, $marka_sil);
     if($run_delete){
 
-        echo "<script>alert('Bir Marka silindi!)</script>";
+        echo "<script>alert('Bir Marka silindi!')</script>";
         echo "<script>window.open('index.php?marka_goster', '_self')</script>";
     }
 }

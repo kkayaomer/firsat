@@ -30,13 +30,13 @@ if(isset($_GET['marka_duzenle'])){
 
 <?php
 
-if(isset($_POST['marka_guncelle'])){
+if(isset($_POST['yeni_marka'])){
     $update_id = $id_marka;
     $yeni_marka = $_POST['yeni_marka'];
 
-    $marka_guncelle = "update markalar set marka_baslik = '$marka_baslik' where  id_marka = '$update_id'";
+    $marka_guncelle = "update markalar set marka_baslik = '$yeni_marka' where  id_marka = '$update_id'";
     $run_marka = mysqli_query($con, $marka_guncelle);
-    if($run_guncelle){
+    if($run_marka){
 
         echo "<script>alert('Marka guncelendi!')</script>";
         echo "<script>window.open('index.php?marka_goster', '_self')</script>";

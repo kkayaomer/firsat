@@ -20,7 +20,7 @@
 
             <tr>
                 <td align="right"><b>Email:</b></td>
-                <td><input type="text" name="email" required="email" placeholder="Email giriniz" /></td>
+                <td><input type="text" name="email" required="email" placeholder="Email giriniz"/></td>
             </tr>
 
 
@@ -53,36 +53,40 @@
 
 
 if (isset($_POST['login'])) {
-if ($_SESSION["kod"]==$_POST["kontrol"]){
-    $mus_email = $_POST['email'];
-    $mus_sifre = $_POST['password'];
-    $sel_mus = "select * from musteri where mus_sifre = '$mus_sifre' and  mus_email = '$mus_email'";
-    $run_mus = mysqli_query($con, $sel_mus);
-    $check_musteri = mysqli_num_rows($run_mus);
 
-    if ($check_musteri == 0) {
-        echo "<script>alert('Şifre veya Email yanlış, Lütfen tekrar deneyiniz!')</script>";
+        if ($_SESSION["kod"] == $_POST["kontrol"]) {
+            $mus_email = $_POST['email'];
+            $mus_sifre = $_POST['password'];
+            $sel_mus = "select * from musteri where mus_sifre = '$mus_sifre' and  mus_email = '$mus_email'";
+            $run_mus = mysqli_query($con, $sel_mus);
+            $check_musteri = mysqli_num_rows($run_mus);
 
-    }
-    $ip = getIp();
-    $sel_sepet = "select * from alisveris_sepeti where ip_addres ='$ip'";
+            if ($check_musteri == 0) {
+                echo "<script>alert('Şifre veya Email yanlış, Lütfen tekrar deneyiniz!')</script>";
 
-    $run_sepet = mysqli_query($con, $sel_sepet);
-    $_SESSION['mus_email'] = $mus_email;
+            }
+            $ip = getIp();
+            $sel_sepet = "select * from alisveris_sepeti where ip_addres ='$ip'";
 
-    $check_sepet = mysqli_num_rows($run_sepet);
-    if ($check_sepet > 0 and $check_sepet == 0) {
+            $run_sepet = mysqli_query($con, $sel_sepet);
+            $_SESSION['mus_email'] = $mus_email;
 
-        echo "<script>alert('Giriş başarılı,Teşekkürler!')</script>";
-        echo "<script>window.open('musteri/hesabim.php', '_self')</script>";
-    } else {
-        echo "<script>alert('Giriş başarılı,Teşekkürler!')</script>";
-        echo "<script>window.open('checkout.php', '_self')</script>";
-    }
-}else{
-    echo "<script>alert('Kod Hatalı!')</script>";
-}
+            $check_sepet = mysqli_num_rows($run_sepet);
+            if ($check_sepet > 0 and $check_sepet == 0) {
 
-}
+                echo "<script>alert('Giriş başarılı,Teşekkürler!')</script>";
+                echo "<script>window.open('musteri/hesabim.php', '_self')</script>";
+            }
+            else {
+                echo "<script>alert('Giriş başarılı,Teşekkürler!')</script>";
+                echo "<script>window.open('checkout.php', '_self')</script>";
+            }
+
+        }
+          else {
+            echo "<script>alert('Kod Hatalı!')</script>";
+          }
+
+  }
 
 ?>

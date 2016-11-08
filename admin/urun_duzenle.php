@@ -138,19 +138,18 @@ if(isset($_GET['urun_duzenle'])){
         <tr>
             <td align="right"><b>Ürün Fiyatı:</b></td>
 
-            <td><input type="text" name="urun_fiyat" <?php echo $urun_fiyat;?>/></td>
+            <td><input type="text" name="urun_fiyat"size="7" value=" <?php echo $urun_fiyat;?>"/></td>
         </tr>
-
 
         <tr>
             <td align="right"><b>Ürün Açıklaması:</b></td>
-            <td><textarea name="urun_aciklama" cols="20" rows="10" <?php echo $urun_aciklama; ?>/></textarea> </td>
+            <td><textarea name="urun_aciklama" cols="20" rows="10" "<?php echo $urun_aciklama; ?>"/></textarea> </td>
         </tr>
 
 
         <tr>
             <td align="right"><b>Ürün Anahtar Kelimeleri:</b></td>
-            <td><input type="text" name="urun_anahtar_kelime" size="50" <?php echo $urun_anahtar_kelime; ?>/></td>
+            <td><input type="text" name="urun_anahtar_kelime" size="50" value= "<?php echo $urun_anahtar_kelime; ?>"/></td>
         </tr>
 
 
@@ -163,7 +162,7 @@ if(isset($_GET['urun_duzenle'])){
     </table>
     <?php
 
-    if (isset($_POST['urun_update'])) {
+    if (isset($_POST['update_urun'])) {
 
         $update_id = $id_urun;
         $urun_baslik = $_POST['urun_baslik'];
@@ -182,6 +181,7 @@ if(isset($_GET['urun_duzenle'])){
 
         $urun_update = "update urunler set urun_kategori = '$urun_kategori', urun_marka = '$urun_marka', urun_baslik = '$urun_baslik', urun_fiyat = '$urun_fiyat', urun_aciklama = '$urun_aciklama', urun_resim = '$urun_resim'
         , urun_anahtar_kelime = '$urun_anahtar_kelime' where id_urun = '$update_id'";
+
 
 
         $run_urun = mysqli_query($con, $urun_update);
